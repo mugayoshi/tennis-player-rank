@@ -12,11 +12,11 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
+	"postCreateCommand": "sudo apk add --update py-pip && pip install --no-cache-dir --upgrade -r ./requirements.txt",
 
 	// Configure tool-specific properties.
 	"customizations": {
-		"vscode": {"extensions": ["ms-python.python", "ms-python.vscode-pylance", "mhutchie.git-graph"]}
+		"vscode": {"extensions": ["ms-python.python", "ms-python.vscode-pylance", "mhutchie.git-graph", "mongodb.mongodb-vscode", "sleistner.vscode-fileutils"]}
 	}
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
